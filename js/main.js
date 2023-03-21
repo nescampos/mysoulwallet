@@ -177,7 +177,7 @@ async function mintToken() {
 }
 
 async function checkNfts() {
-  const myWallet = "rEFLkp6kqHhCfnQ7qGywrFiFDkhVLgtegc" // localStorage.getItem("xrplWalletAddress") // 
+  const myWallet = localStorage.getItem("xrplWalletAddress") // "rEFLkp6kqHhCfnQ7qGywrFiFDkhVLgtegc" // 
   await client.connect()
   try {
     var list = document.querySelector('.tokenList');
